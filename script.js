@@ -84,36 +84,36 @@
 // }
 
 // => 7-masala <=//
-{
-const insonlar = [
-  {
-    ism:'Shahzodbek',
-    yosh: 25,
-  },
-  {
-    ism: 'Bekzod',
-    yosh:23,
-},
-{
-  ism:'Abbos',
-  yosh:18,
-},
-];
-  let max=insonlar[0].yosh;
-  for(let i=1; i<insonlar.length; i++){
-    if(insonlar[i].yosh>=max){
-      max=insonlar[i].yosh;
-    }
-  }
-  console.log(max);
+// {
+// const insonlar = [
+//   {
+//     ism:'Shahzodbek',
+//     yosh: 25,
+//   },
+//   {
+//     ism: 'Bekzod',
+//     yosh:23,
+// },
+// {
+//   ism:'Abbos',
+//   yosh:18,
+// },
+// ];
+//   let max=insonlar[0].yosh;
+//   for(let i=1; i<insonlar.length; i++){
+//     if(insonlar[i].yosh>=max){
+//       max=insonlar[i].yosh;
+//     }
+//   }
+//   console.log(max);
 
-  for (let i = 0; i < insonlar.length; i++) {
-    if(insonlar[i].yosh==max){
-      console.log(insonlar[i].ism);
-    }
+//   for (let i = 0; i < insonlar.length; i++) {
+//     if(insonlar[i].yosh==max){
+//       console.log(insonlar[i].ism);
+//     }
     
-  }
-}
+//   }
+// }
 
 // => 8-masala <=//
 // {
@@ -292,6 +292,14 @@ const insonlar = [
 
 //          }
 //   }
+
+// for(let i=0; i<n; i++){
+//   for(let j=i+1; j<n; j++){
+//     if(array[j]==array[i]){
+//       array.splice(j,1)
+//     }
+//   }
+// }
 
 //   console.log(`a massiv elementlar: ${a}`);
 //   console.log(`b massiv elementlar: ${b}`);
