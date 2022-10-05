@@ -328,14 +328,20 @@
 // }
 
 // => 22-masala <=// =>Savol
-// {
-//   let n=+prompt("Massiv elementlar sonini kiriting: ");
-//   let array=[];
-//   for(let i=0; i<n; i++){
-//     array[i]=Math.random()*10;
-//     array[i]=Math.round(array[i]);
-//   }
-//   console.log(`Massiv elementlari: ${array}`);
+{
+  let n=+prompt("Massiv elementlar sonini kiriting: ");
+  let array=[];
+  for(let i=0; i<n; i++){
+    array[i]=Math.random()*10;
+    array[i]=Math.round(array[i]);
+  }
+  console.log(`Massiv elementlari: ${array}`);
+  for(let i=0; i<n; i++){
+    for(let j=i+1; j<n; j++)
 
-
-// }
+      if(array[i] == array[j]){
+        array.splice(j,1);  
+      }
+    }
+console.log(`Bir xil elementlari o'chirilgan massiv: ${array}`);
+  }
