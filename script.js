@@ -83,6 +83,38 @@
 //   console.log(`Indekslari kamayish tartibidagi massiv elementlari: ${Array}`);
 // }
 
+// => 7-masala <=//
+{
+const insonlar = [
+  {
+    ism:'Shahzodbek',
+    yosh: 25,
+  },
+  {
+    ism: 'Bekzod',
+    yosh:23,
+},
+{
+  ism:'Abbos',
+  yosh:18,
+},
+];
+  let max=insonlar[0].yosh;
+  for(let i=1; i<insonlar.length; i++){
+    if(insonlar[i].yosh>=max){
+      max=insonlar[i].yosh;
+    }
+  }
+  console.log(max);
+
+  for (let i = 0; i < insonlar.length; i++) {
+    if(insonlar[i].yosh==max){
+      console.log(insonlar[i].ism);
+    }
+    
+  }
+}
+
 // => 8-masala <=//
 // {
 //   let n=+prompt("Massiv elementlari sonini kiriting: ");
@@ -328,20 +360,20 @@
 // }
 
 // => 22-masala <=// =>Savol
-{
-  let n=+prompt("Massiv elementlar sonini kiriting: ");
-  let array=[];
-  for(let i=0; i<n; i++){
-    array[i]=Math.random()*10;
-    array[i]=Math.round(array[i]);
-  }
-  console.log(`Massiv elementlari: ${array}`);
-  for(let i=0; i<n; i++){
-    for(let j=i+1; j<n; j++)
+// {
+//   let n=+prompt("Massiv elementlar sonini kiriting: ");
+//   let array=[];
+//   for(let i=0; i<n; i++){
+//     array[i]=Math.random()*10;
+//     array[i]=Math.round(array[i]);
+//   }
+//   console.log(`Massiv elementlari: ${array}`);
+//   for(let i=0; i<n; i++){
+//     for(let j=i+1; j<n; j++)
 
-      if(array[i] == array[j]){
-        array.splice(j,1);  
-      }
-    }
-console.log(`Bir xil elementlari o'chirilgan massiv: ${array}`);
-  }
+//       if(array[i] == array[j]){
+//         array.splice(j,1);  
+//       }
+//     }
+// console.log(`Bir xil elementlari o'chirilgan massiv: ${array}`);
+//   }
